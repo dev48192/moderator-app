@@ -6,8 +6,7 @@ module.exports ={
     entry: ["regenerator-runtime/runtime.js", "./src/index.tsx"],
     output: {
       path: resolve(__dirname, "build"),
-      filename: "bundle.js",
-      publicPath: '/',
+      publicPath: 'auto',
     },
     resolve: {
       extensions: [".js", ".jsx", ".ts", ".tsx"],
