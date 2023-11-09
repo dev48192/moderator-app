@@ -1,4 +1,3 @@
-## Web-Typescript-Webpack-Template
+## Moderator Dashboard
 ---
 
-Template to easy start a react project with typescript and webpack
