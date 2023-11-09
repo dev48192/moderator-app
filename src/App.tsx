@@ -1,10 +1,10 @@
 import React from 'react';
+// component
+import ModeratorDashboard from './pages/ModeratorDashboard';
 
 const App: React.FC = () => {
   return (
-    <div>
-      Simple Ghar
-    </div>
+    <ModeratorDashboard/>
   );
 }
 export default App;
