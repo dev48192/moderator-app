@@ -1,0 +1,25 @@
+.category {
+  cursor: pointer;
+}
+.caret-icon {
+  transform: rotate(-90deg);
+  height: 14px;
+  color: #565959;
+}
+.caret-down-icon {
+    height: 14px;
+    color: #565959;
+}
+.collapsible {
+  &-header {
+    display: flex;
+    align-items: center;
+  }
+  &-header-text {
+    font-size: 14px;
+    color: #565959;
+  }
+  &-children {
+    padding: 0 16px;
+  }
+}
