@@ -6,3 +6,24 @@
   flex-wrap: wrap;
   grid-gap: 12px;
 }
+.selected-details {
+  font-size: 20px;
+  color: #0C5A60;
+}
+.pick-category-container {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+}
+.pick-category-dropdown {
+  width: 60%;
+  height: 32px;
+  margin: 0 12px;
+  border-radius: 8px;
+  color: #565959;
+  margin-bottom: 12px;
+}
+.pick-category-label {
+  color: #565959;
+  min-width: max-content;
+}
