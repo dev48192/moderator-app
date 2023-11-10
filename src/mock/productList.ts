@@ -20,9 +20,12 @@ export const fetchProductsByCategory = async () => {
         {
           rank: 1,
           asin_id: "B0C35G8XB9",
-          images: [],
-          title:
-            "Silonn Ice Maker Countertop, 9 Cubes Ready in 6 Mins, 26lbs in 24Hrs, Self-Cleaning Ice Machine with Ice Scoop and Basket, 2 Sizes",
+          images: [
+            "https://i.imgur.com/1twoaDy.jpeg",
+            "https://i.imgur.com/FDwQgLy.jpeg",
+            "https://i.imgur.com/kg1ZhhH.jpeg"
+          ],
+          title: 'New Product',
           rating: 4.3,
           rating_count: 24145,
           price: 1231,

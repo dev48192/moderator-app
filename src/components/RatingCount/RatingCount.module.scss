@@ -1,0 +1,14 @@
+.rating-container {
+    display: flex;
+    align-items: center;
+}
+.star-icon {
+    color: #e38f19;
+    width: 14px;
+    height: 14px;
+}
+.rating-count {
+    font-size: 14px;
+    color: #057586;
+    padding: 0 4px;
+}

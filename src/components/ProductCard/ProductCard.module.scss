@@ -1,6 +1,9 @@
 .product-card {
-    border: 1px solid #ccc;
-    padding: 10px;
-    text-align: center;
-  }
-  
+  border: 1px solid #ccc;
+  padding: 10px;
+  max-width: 250px;
+  min-width: 250px;
+}
+.product-title {
+  color: #057587;
+}

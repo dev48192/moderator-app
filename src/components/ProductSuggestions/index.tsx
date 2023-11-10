@@ -26,8 +26,8 @@ const ProductSuggestions: React.FC = () => {
   return (
     <div className={Styles['product-suggestions-content']}>
       <div className={Styles['product-grid']}>
-        {allProductsInfo['products']?.map((product)=>(
-          <ProductCard key={product['asin_id']} product={product} />
+        {allProductsInfo['products']?.map((product, index)=>(
+          <ProductCard key={`${product['asin_id']}-${index}`} product={product} />
         ))}
       </div>
     </div>
