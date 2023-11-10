@@ -25,7 +25,7 @@ const Carousel: React.FC<{ images: string[] }> = ({ images }) => {
         <div className={Styles["carousel-container"]}>
           <button className={Styles['action-button']} onClick={goToPrevImage}>{"<"}</button>
           <img
-            width={100}
+            width={200}
             src={images[currentImageId]}
           />
           <button className={Styles['action-button']} onClick={goToNextImage}>{">"}</button>
@@ -34,7 +34,7 @@ const Carousel: React.FC<{ images: string[] }> = ({ images }) => {
       <Unless condition={images.length > 1}>
         <div className={Styles["single-image"]}>
           <img
-            width={100}
+            width={200}
             src={images[0] || "https://i.imgur.com/1twoaDy.jpeg"}
           />
         </div>
