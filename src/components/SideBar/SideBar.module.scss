@@ -1,3 +1,7 @@
 .side-bar-content {
     padding: 8px 12px;
+
+    @media (max-width: 768px) {
+        padding: 4px;
+    }
 }
