@@ -14,12 +14,30 @@
   &-header {
     display: flex;
     align-items: center;
-  }
-  &-header-text {
-    font-size: 14px;
-    color: #565959;
+    width: 100%;
   }
   &-children {
-    padding: 0 16px;
+    padding-left: 16px;
   }
+}
+.category-title-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.category-title-bold {
+  font-size: 14px;
+  color: #565959;
+  font-weight: 500;
+}
+.category-status-unpublished {
+  font-size: 14px;
+  color: #FBAA39;
+  font-weight: 600;
+}
+.category-status-published {
+  font-size: 14px;
+  color: #30A882;
+  font-weight: 600;
 }

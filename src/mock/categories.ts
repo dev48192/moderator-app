@@ -6,7 +6,7 @@ export const fetchCategories = async () => {
       category_id: "123",
       category_code: "",
       category_name: "All Categories",
-      status: "DRAFT",
+      status: "PUBLISHED",
       published: {
         best_picks: ["B0C35G8XB8", "B0C35G8XB8"],
         upgrade_picks: ["B0C35G8XB9", "B0C35G8X10"],
