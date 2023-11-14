@@ -1,19 +1,26 @@
-import React, { useMemo, useState } from "react";
+import React from "react";
 import Styles from "./Categories.module.scss";
-import CaretDownIcon from "../../assets/CaretDownIcon";
-import If from "../Conditional/If";
 import Collapsible from "./Collapsible";
 
 const Categories: React.FC<{
   categories: any;
 }> = ({ categories }) => {
-  const isChildExist = useMemo(
-    () => categories["childs"] && categories["childs"].length > 0,
-    [categories]
-  );
   return (
     <div className={Styles["category"]}>
-      <Collapsible title={categories["category_name"]}>
+      <Collapsible
+        header={
+          <div className={Styles["category-title-container"]}>
+            <div className={true && Styles["category-title-bold"]}>
+              {categories["category_name"]}
+            </div>
+            {categories['status'] === 'DRAFT' ? (
+              <div title="Unpublished" className={Styles["category-status-unpublished"]}>U</div>
+            ) : (
+              <div title="Published" className={Styles["category-status-published"]}>P</div>
+            )}
+          </div>
+        }
+      >
         {categories["childs"] &&
           categories["childs"].length > 0 &&
           categories["childs"].map((category, index) => (
