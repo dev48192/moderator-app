@@ -7,6 +7,7 @@ import ProductSuggestions from '../../components/ProductSuggestions';
 import Styles from './ModeratorDashboard.module.scss';
 
 const ModeratorDashboard: React.FC = () => {
+  console.log('prinsnsnss----->', process.env.BASE_URL)
   return (
     <div className={Styles['content']}>
       <div className={Styles['top-nav-bar']}>
