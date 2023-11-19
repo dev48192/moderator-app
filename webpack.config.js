@@ -3,7 +3,6 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const DotenvWebpackPlugin = require("dotenv-webpack");
 
 module.exports = async (_, { stats, mode = 'development' }) => {
-  const { APP_ENV = 'development' } = process.env;
   const isDev = mode === 'development';
   return {
     mode,
@@ -48,7 +47,7 @@ module.exports = async (_, { stats, mode = 'development' }) => {
       }),
 
       new DotenvWebpackPlugin({
-        path: resolve(__dirname, 'config', APP_ENV, '.defined.urls'),
+        path: resolve(__dirname, 'config', mode, '.defined.urls'),
       })
     ],
   }
